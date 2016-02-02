@@ -7,6 +7,7 @@
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
   <style>
     body{
+      margin: 100px 0;
     text-align: center;
     background-color: white;
     color: black;
@@ -21,22 +22,55 @@
 a:hover {
   color: grey;
 }
-
 h1 {
   color: black;
   text shadow: 2px 2px 2px grey;
   transition: 1s all;
   font-family: 'Oswald', sans-serif;
 }
-
 h1:hover {
   color:  #D3D3D3;
 }
 
+#what-we-do{
+  margin-top: 30px;
+  background-color: black;
+  padding: 20px;
+}
+
+#what-we-do h1{
+  color: white;
+}
+
+#who-i-am{
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+}
+
+#who-i-am h1{
+  color: black;
+}
+
+nav{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#hero{
+      padding: 15px;
+      background:  url(http://i.imgur.com/LlPLCyG.png);
+      background-size: cover;
+      background-repeat: no-repeat;  
+
+
   </style>
 </head>
-<body background="http://i.imgur.com/LlPLCyG.png">
-  
+
+<section id="hero">
+<body>
+<nav>HOME | <a href="#who-i-am">ABOUT ME</a> | WORK | CONTACT ME<br></nav>
 <img src="http://i.imgur.com/5x9NxZn.png" height="650"></img>
 
 
@@ -51,4 +85,15 @@ h1:hover {
 
 <p><a href="https://www.linkedin.com/in/valentina-pardi-a86ba6b4?trk=nav_responsive_tab_profile" target="_blank"><img src="http://i.imgur.com/2IVemHw.png" height="20"></img></a> <a href="https://twitter.com/payval_" target="_blank"><img src="http://i.imgur.com/5el9c6p.png" height="20"></img></a> <a href="https://www.instagram.com/itsvalzzz/" target="_blank"><img src="http://i.imgur.com/oOrV8M8.png" height="20"></img></a><br>
 <p>Valentina Pardi © 2016<br>
+</section>
+
+<section id="what-we-do">
+  <h1> What we do</h1>
+  <p style="color:white"> Place three icons illustrating what we do </p>
+</section>
+
+<section id="who-i-am">
+  <h1> Who I am </h1>
+  <img src="http://i.imgur.com/QIsco1G.jpg" height="300px">
+</section>
 </body>
