@@ -6,6 +6,18 @@
   <title>Valentina Pardi | Work</title>
   <link href='https://fonts.googleapis.com/css?family=Dosis:200' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <script>
+    $("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+  </script>
   <style>
     body{
       margin: 0;
@@ -56,15 +68,23 @@ nav{
   right: 20px;
 }
 
-#slideShowImages {
-      border: 1px gray solid;
-    }   
-  
-    #slideShowImages img {
-      padding: 3px;
-      height: 400px;
-    }  
-    
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
 </style>
 </head>
 
@@ -74,15 +94,24 @@ nav{
   
 <nav><a href="index.html">HOME</a> | <a href="about.html">ABOUT ME</a> | <a href="work.html">WORK</a> | <a href="contact.html">CONTACT ME</a></nav><br>
 
-<p><div id="slideShowImages">
-    <img src="http://i.imgur.com/aOFUd00.jpg" alt="Slide 1">
-    <img src="http://i.imgur.com/tp0DWJt.jpg" alt="Slide 2">
-    <img src="http://i.imgur.com/pdoODi9.jpg" alt="Slide 3">    
-    <img src="http://i.imgur.com/5DixkeO.jpg" alt="Slide 4">
-    <img src="http://i.imgur.com/OLx0mnZ.jpg" alt="Slide 5">
-  </div>
-  <script src="slideShow.js"></script>
-</p>
+<div id="slideshow">
+   <div>
+     <img src="http://i.imgur.com/aOFUd00.jpg">
+   </div>
+   <div>
+     <img src="http://i.imgur.com/tp0DWJt.jpg">
+   </div>
+   <div>
+     <img src="http://i.imgur.com/pdoODi9.jpg">
+   </div>
+   <div>
+     <img src="http://i.imgur.com/5DixkeO.jpg">
+   </div>
+   <div>
+     <img src="http://i.imgur.com/OLx0mnZ.jpg">
+   </div>
+</div>
+
 <iframe src="Valentina.Pardi.Resume.pdf" title="Valentina Pardi Resume" width=500px height=400px></iframe>
 
 <p><a href="https://www.linkedin.com/in/valentina-pardi-a86ba6b4?trk=nav_responsive_tab_profile" target="_blank"> <img src="http://i.imgur.com/2IVemHw.png" height="20" alt="LinkedIn"></a> <a href="https://twitter.com/payval_" target="_blank"> <img src="http://i.imgur.com/5el9c6p.png" height="20" alt="Twitter"></a> <a href="https://www.instagram.com/itsvalzzz/" target="_blank"> <img src="http://i.imgur.com/oOrV8M8.png" height="20" alt="Instagram"></a><br>
