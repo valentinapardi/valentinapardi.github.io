@@ -6,23 +6,6 @@
   <title>Valentina Pardi | Work</title>
   <link href='https://fonts.googleapis.com/css?family=Dosis:200' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-  <script>
-    
-    $(function() {
-        
-        $("#slideshow > div:gt(0)").hide();
-        
-        setInterval(function() {
-            $('#slideshow > div:first')
-            .fadeOut(1000)
-            .next()
-            .fadeIn(1000)
-            .end()
-            .appendTo('#slideshow');
-        }, 3000);
-      
-    });
-  </script>
   <style>
     body{
       margin: 0;
@@ -73,20 +56,75 @@ nav{
   right: 20px;
 }
 
-#slideshow { 
-    margin: 50px auto; 
-    position: relative; 
-    width: 300px; 
-    height: 300px; 
-    padding: 10px; 
+.css-slideshow{
+   position: relative;
+   max-width: 495px;
+   height: 370px;
+   margin: 5em auto .5em auto;
+}
+.css-slideshow figure{
+   margin: 0;
+   position: absolute;
+}
+.css-slideshow figcaption{
+   position: absolute;
+   top: 0;
+   color: #fff;
+   background: rgba(0,0,0, .3);
+   font-size: .8em;
+   padding: 8px 12px;
+   opacity: 0;
+   transition: opacity .5s;
+}
+.css-slideshow:hover figure figcaption{
+   transition: opacity .5s;
+   opacity: 1;
+}
+.css-slideshow figure{
+   opacity:0;
 }
 
-#slideshow > div { 
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px; 
+figure:nth-child(1) {
+   animation: xfade 48s 42s infinite;
+}
+figure:nth-child(2) {
+   animation: xfade 48s 36s infinite;
+}
+figure:nth-child(3) {
+   animation: xfade 48s 30s infinite;
+}
+figure:nth-child(4) {
+   animation: xfade 48s 24s infinite;
+}
+figure:nth-child(5) {
+   animation: xfade 48s 18s infinite;
+}
+figure:nth-child(6) {
+   animation: xfade 48s 12s infinite;
+}
+figure:nth-child(7) {
+   animation: xfade 48s 6s infinite;
+}
+figure:nth-child(8) {
+   animation: xfade 48s 0s infinite;
+}
+
+@keyframes xfade{
+   0%{
+      opacity: 1;
+   }
+   10.5% {
+      opacity:1;
+   }
+   12.5%{
+      opacity: 0;
+   }
+   98% {
+      opacity:0;
+   }
+   100% {
+      opacity:1;
+   }
 }
 
 </style>
@@ -98,22 +136,27 @@ nav{
   
 <nav><a href="index.html">HOME</a> | <a href="about.html">ABOUT ME</a> | <a href="work.html">WORK</a> | <a href="contact.html">CONTACT ME</a></nav><br>
 
-<div id="slideshow">
-   <div>
-     <img src="http://i.imgur.com/aOFUd00.jpg" width="300" height="300">
-   </div>
-   <div>
-     <img src="http://i.imgur.com/tp0DWJt.jpg" width="300" height="300">
-   </div>
-   <div>
-     <img src="http://i.imgur.com/pdoODi9.jpg" width="300" height="300">
-   </div>
-   <div>
-     <img src="http://i.imgur.com/5DixkeO.jpg" width="300" height="300">
-   </div>
-   <div>
-     <img src="http://i.imgur.com/OLx0mnZ.jpg" width="300" height="300">
-   </div>
+<div class="css-slideshow"> 
+  <figure> 
+    <img src="http://i.imgur.com/aOFUd00.jpg" width="495" height="370" /> 
+     <figcaption><strong>CSS3:</strong> CSS3 delivers a...</figcaption> 
+  </figure> 
+  <figure> 
+    <img src="http://i.imgur.com/tp0DWJt.jpg" width="495" height="370" /> 
+    <figcaption><strong>Semantics:</strong> Giving meaning to...</figcaption> 
+  </figure>
+  <figure> 
+    <img src="http://i.imgur.com/pdoODi9.jpg" width="495" height="370" /> 
+    <figcaption><strong>Semantics:</strong> Giving meaning to...</figcaption> 
+  </figure>
+  <figure> 
+    <img src="http://i.imgur.com/5DixkeO.jpg" width="495" height="370" /> 
+    <figcaption><strong>Semantics:</strong> Giving meaning to...</figcaption> 
+  </figure>
+  <figure> 
+    <img src="http://i.imgur.com/OLx0mnZ.jpg" width="495" height="370" /> 
+    <figcaption><strong>Semantics:</strong> Giving meaning to...</figcaption> 
+  </figure>
 </div>
 
 <iframe src="Valentina.Pardi.Resume.pdf" title="Valentina Pardi Resume" width=500px height=400px></iframe>
