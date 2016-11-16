@@ -98,7 +98,7 @@ footer {
   display: block; 
     -webkit-filter: hue-rotate(90deg) drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
     filter: hue-rotate(90deg) drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
-    animation: rings 5s infinite;
+    animation: happy 5s infinite;
     margin-top: 2px;
   margin-left: 850px;
   margin-right: 100px;
