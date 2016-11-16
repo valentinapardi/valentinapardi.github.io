@@ -12,8 +12,8 @@
 
 @font-face {
     font-family: 'alex_brushregular';
-    src: url('fonts/alexbrush-regular-webfont.woff2') format('woff2'),
-         url('fonts/alexbrush-regular-webfont.woff') format('woff');
+    src: url('alexbrush-regular-webfont.woff2') format('woff2'),
+         url('alexbrush-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -85,4 +85,43 @@ footer {
     background-color: white;
     margin-left: 240px;
     opacity: 0.8;
+  }
+
+  #happy img[src="http://images.clipartpanda.com/smiley-face-clip-art-images-sun_smiley_face.png"] {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 15%;
+  height: 30%;
+  padding: 150px;
+  border-radius: 100%;
+  display: block; 
+    -webkit-filter: hue-rotate(90deg) drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+    filter: hue-rotate(90deg) drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+    animation: rings 5s infinite;
+    margin-top: 2px;
+  margin-left: 750px;
+  margin-right: 100px;
+  margin-bottom: 10px;
+}
+
+@keyframes happy {
+
+  0% {
+    filter: saturate(0) opacity(.20);
+  }
+  25% {
+    filter:saturate(1) opacity(.40);
+  }
+
+  50% {
+    filter:saturate(1.5) opacity(.60);
+
+  }
+  75% {
+    filter:saturate(2) opacity(.80);
+  }
+
+  100% {
+    filter: saturate(0) opacity(.100);
   }
