@@ -100,7 +100,7 @@ footer {
     filter: hue-rotate(90deg) drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
     animation: happy 5s infinite;
     margin-top: 2px;
-  margin-left: 850px;
+  margin-left: 50px;
   margin-right: 100px;
   margin-bottom: 10px;
 }
